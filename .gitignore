@@ -1,0 +1,19 @@
+# YOLO models
+*.pt
+
+# Training outputs & datasets
+runs/
+train/
+valid/
+yolo_gpu/
+
+# Environment
+env/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
