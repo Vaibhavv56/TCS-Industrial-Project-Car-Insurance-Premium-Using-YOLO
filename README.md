@@ -1,11 +1,3 @@
-Here is a **clean, professional, and well-structured rewrite** of your README.
-I have corrected grammar, improved flow, and made it consistent with the technical quality of your training/testing sections, **without changing your core content**.
-
-You can **copy–paste this directly** 👇
-
----
-
-````md
 # 🚗 Driver Distraction Detection using YOLO
 
 ## 📌 Project Overview
@@ -45,13 +37,11 @@ Ensure the following are installed:
 Install dependencies:
 ```bash
 pip install ultralytics opencv-python streamlit
-````
+
 
 ---
 
-## 🏋️‍♂️ How to Train YOLO11n
-
-Train the YOLO11n model using the following command:
+## How to Train YOLO11n
 
 ```bash
 yolo detect train model=yolo11n.pt data=data.yaml epochs=50 imgsz=640
@@ -59,9 +49,7 @@ yolo detect train model=yolo11n.pt data=data.yaml epochs=50 imgsz=640
 
 ---
 
-## 💾 Model Output
-
-After training, the best-performing model will be saved at:
+## After Training the Best Model Will Be Saved At
 
 ```text
 runs/detect/train/weights/best.pt
@@ -69,9 +57,7 @@ runs/detect/train/weights/best.pt
 
 ---
 
-## 🎥 Testing on Webcam
-
-Run inference directly using your webcam:
+## Testing on Webcam
 
 ```bash
 yolo detect predict model=runs/detect/<your_yolo11_folder>/weights/best.pt source=0 show=True
@@ -79,29 +65,9 @@ yolo detect predict model=runs/detect/<your_yolo11_folder>/weights/best.pt sourc
 
 ---
 
-## 🖥️ Testing Using Streamlit App
-
-Launch the Streamlit application:
+## Testing on App
 
 ```bash
 streamlit run app.py
 ```
 
-```
-
----
-
-### ✅ Improvements Made
-- Fixed grammatical issues (e.g. *“Using of Phone” → “Using Phone”*)
-- Improved technical clarity and professionalism
-- Better section naming and flow
-- Hackathon / evaluator ready
-- Industry-standard README structure
-
-If you want, I can also:
-- Add **performance metrics (mAP, precision, recall)**
-- Make it **research-paper ready**
-- Optimize it for **GitHub showcase & resume**
-
-Just tell me 👍
-```
