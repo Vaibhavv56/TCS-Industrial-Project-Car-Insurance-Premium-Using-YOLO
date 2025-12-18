@@ -1,4 +1,4 @@
-# 🚗 Driver Distraction Detection using YOLO
+# Driver Distraction Detection using YOLO
 
 ## 📌 Project Overview
 This project implements a **real-time driver distraction detection system** using a trained **YOLO object detection model**.
