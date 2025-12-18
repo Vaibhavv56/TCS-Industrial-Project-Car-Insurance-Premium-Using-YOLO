@@ -1,89 +1,26 @@
+# 🚗 Driver Distraction Detection using YOLO
 
-````md
-🚗 Driver Distraction Detection using YOLO
-📌 Project Overview
+## 📌 Project Overview
+This project implements a **real-time driver distraction detection system** using a trained **YOLO (You Only Look Once) object detection model**.
 
-This project detects driver distraction in real time using a trained YOLO object detection model.
-It is specifically optimized to identify mobile phone usage while driving, helping monitor unsafe driving behavior and improve road safety.
-
-The system works with a live webcam feed and provides fast, accurate detection suitable for real-time applications.
-
-🎯 Detection Classes
-
-The model is trained to detect the following class:
-
-Using Phone While Driving
-
-Note: The model is intentionally focused on a single high-risk distraction to improve accuracy and reduce false positives.
-
-✨ Features
-
-Real-time driver monitoring using webcam
-
-High precision detection for phone usage
-
-Lightweight YOLO model for fast inference
-
-Simple and clean Streamlit interface
-
-Easy to set up and run locally
-
-🛠️ Tech Stack
-
-Python
-
-YOLO (Ultralytics)
-
-OpenCV
-
-Streamlit
-
-⚙️ Requirements
-
-Ensure you have the following installed:
-
-Python 3.8 or above
-
-OpenCV
-
-Ultralytics (YOLO)
-
-Streamlit
-
-Install dependencies:
-```bash
-pip install ultralytics opencv-python streamlit
-````
+The system is specifically designed to detect **mobile phone usage while driving**, one of the leading causes of road accidents.  
+By leveraging a lightweight YOLO architecture, the model achieves **high accuracy and fast inference**, making it suitable for real-time deployment using a webcam.
 
 ---
 
-## How to Train YOLO11n
+## 🎯 Detection Focus
+The model is trained to identify the following class:
 
-```bash
-yolo detect train model=yolo11n.pt data=data.yaml epochs=50 imgsz=640
-```
+- **Using Phone While Driving**
 
----
-
-## After Training the Best Model Will Be Saved At
-
-```text
-runs/detect/train/weights/best.pt
-```
+> The model intentionally focuses on a single high-risk distraction to improve precision and reduce false detections.
 
 ---
 
-## Testing on Webcam
-
-```bash
-yolo detect predict model=runs/detect/<your_yolo11_folder>/weights/best.pt source=0 show=True
-```
-
----
-
-## Testing on App
-
-```bash
-streamlit run app.py
-```
+## ✨ Features
+- Real-time webcam-based detection
+- Optimized for mobile phone usage detection
+- High precision and recall
+- Lightweight YOLO model for fast performance
+- Simple and easy-to-run setup
 
