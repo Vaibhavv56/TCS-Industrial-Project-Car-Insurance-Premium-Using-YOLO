@@ -1,31 +1,54 @@
 
 ````md
-# Driver Distraction Detection using YOLO
+🚗 Driver Distraction Detection using YOLO
+📌 Project Overview
 
-## Project Description
-This project detects driver distraction using a trained YOLO object detection model.  
-The system focuses on identifying two classes only:
-- **Using of Phone while Driving**
+This project detects driver distraction in real time using a trained YOLO object detection model.
+It is specifically optimized to identify mobile phone usage while driving, helping monitor unsafe driving behavior and improve road safety.
 
-The model works in real-time using a webcam and helps in monitoring unsafe driving behavior.
+The system works with a live webcam feed and provides fast, accurate detection suitable for real-time applications.
 
----
+🎯 Detection Classes
 
-## Features
-- Real-time camera-based detection
-- Focused on mobile phone usage while driving
-- High precision and recall
-- Lightweight and easy to run
+The model is trained to detect the following class:
 
----
+Using Phone While Driving
 
-## Requirements
-Make sure the following are installed:
+Note: The model is intentionally focused on a single high-risk distraction to improve accuracy and reduce false positives.
 
-- Python 3.8 or above
-- OpenCV
-- Ultralytics (YOLO)
-- Streamlit
+✨ Features
+
+Real-time driver monitoring using webcam
+
+High precision detection for phone usage
+
+Lightweight YOLO model for fast inference
+
+Simple and clean Streamlit interface
+
+Easy to set up and run locally
+
+🛠️ Tech Stack
+
+Python
+
+YOLO (Ultralytics)
+
+OpenCV
+
+Streamlit
+
+⚙️ Requirements
+
+Ensure you have the following installed:
+
+Python 3.8 or above
+
+OpenCV
+
+Ultralytics (YOLO)
+
+Streamlit
 
 Install dependencies:
 ```bash
